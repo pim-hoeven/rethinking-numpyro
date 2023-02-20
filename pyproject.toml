@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "rethinking-numpyro"
+version = "0.1.0"
+description = ""
+authors = ["Hoeven-Pim <Hoeven.Pim@bcg.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "3.9.16"
+numpyro = "^0.11.0"
+arviz = "^0.15.0"
+causalgraphicalmodels = "^0.0.4"
+daft = "^0.1.2"
+jupyter = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+black = "^23.1.0"
+pylint = "^2.16.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
